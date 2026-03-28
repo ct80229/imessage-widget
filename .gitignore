@@ -1,0 +1,27 @@
+# Build
+.build/
+*.o
+*.d
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivefile
+
+# Swift Package Manager
+.swiftpm/xcode/
+Packages/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

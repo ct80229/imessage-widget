@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.local.iMessageWidget</string>
+    <key>CFBundleName</key>
+    <string>iMessageWidget</string>
+    <key>CFBundleDisplayName</key>
+    <string>iMessageWidget</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleExecutable</key>
+    <string>iMessageWidget</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <!-- Hide from Dock and Cmd+Tab -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- Permission descriptions -->
+    <key>NSContactsUsageDescription</key>
+    <string>iMessageWidget uses Contacts to show names instead of phone numbers in the widget.</string>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>iMessageWidget controls Messages to send replies directly from the widget.</string>
+
+    <!-- Minimum macOS version -->
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+</dict>
+</plist>

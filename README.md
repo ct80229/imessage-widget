@@ -1,6 +1,6 @@
 # iMessageWidget
 
-A macOS menu bar app that surfaces your unanswered iMessages as a prioritized queue. Instead of scrolling through threads, you get a compact widget that ranks conversations by urgency and lets you reply without opening Messages.
+I forget to respond to messages. This widget exists to fix this. Run this to create a prioritized queue of messages. Instead of scrolling through threads, you get a compact widget that ranks conversations by urgency and lets you reply without opening Messages.
 
 ![macOS](https://img.shields.io/badge/macOS-14%2B-blue) ![Swift](https://img.shields.io/badge/Swift-5.9-orange)
 
@@ -13,7 +13,7 @@ iMessageWidget reads your local `chat.db` (the same database the Messages app us
 - **Time decay** — the longer a message sits unanswered, the higher its urgency score (up to 2 weeks)
 - **Content signals** — questions, time-sensitive language, emotional content, and long messages all raise the score; conversational closers (like "ok" or "👍") lower it
 - **Momentum** — if you were recently going back and forth with someone and dropped the thread, that bumps their score
-- **Priority** — a per-contact multiplier you control (1–5), plus a high/low tier setting
+- **Priority** — a per-contact multiplier you control (1–5), plus a high/low tier setting. High-tier conversations will always be placed above low-tier conversations (default setting is low). 
 
 Conversations are displayed as cards ranked by their effective score (0–100). A color bar on the left of each card shifts from white → orange → red as urgency increases.
 
